@@ -60,3 +60,35 @@ Con esto, podemos ver si hacemos un listado de los contenedores
 <p align= center>
   <img alt="cuarta" title="cuarta" src="https://github.com/Diego5RG-dev/ApacheDocker/blob/main/recursosDocker2/4.png "width="75%">
 </p>
+
+---
+Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
+---
+
+En nuestra carpeta creamos un archivo index.html donde incluimos un código básico:
+
+
+        <h1> Hola Mundo </h1>
+
+Con esto, podemos ver en nuestra página web la siguiente imagen/salida.
+
+<p align= center>
+  <img alt="quinta" title="quinta" src="https://github.com/Diego5RG-dev/ApacheDocker/blob/main/recursosDocker2/5.png ">
+</p>
+
+---
+Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un directorio que tu elijas.
+---
+
+Para este apartado, tuve que volver a crear el contenedor, y esta vez hacerlo como antes mediante el Bind Mount, con el siguiente comando, cambiando el nombre:
+
+
+        docker run -d --name dam_web2 -p 9080:80 -v ~/docker:/usr/local/apache2/htdocs httpd:2.4
+
+Con esto, podemos listar los contenedores para verificar su creación.
+
+<p align= center>
+  <img alt="sexta" title="sexta" src="https://github.com/Diego5RG-dev/ApacheDocker/blob/main/recursosDocker2/6.png "width="75%">
+</p>
+
+
