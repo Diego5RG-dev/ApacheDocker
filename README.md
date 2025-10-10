@@ -1,4 +1,3 @@
-# ApacheDocker
 <h1 align="center">   Tareas de docker con Apache </h1> <br>
 <p align="center">
     <img alt="logo" title="logo" src="https://github.com/Diego5RG-dev/ApacheDocker/blob/main/recursosDocker2/logo.jpg "width="450">
@@ -91,4 +90,32 @@ Con esto, podemos listar los contenedores para verificar su creación.
   <img alt="sexta" title="sexta" src="https://github.com/Diego5RG-dev/ApacheDocker/blob/main/recursosDocker2/6.png "width="75%">
 </p>
 
+---
+Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador: 
+---
 
+Consultamos nuestras direcciones del localhost y comprobamos que ambas toman el mismo index.html, haciendo que nuestras páginas contengan la misma estructura y datos.
+
+
+        http://localhost:8080/
+        http://localhost:9080/
+
+
+<p align= center>
+  <img alt="septima" title="septima" src="https://github.com/Diego5RG-dev/ApacheDocker/blob/main/recursosDocker2/7.png" width="76%">
+</p>
+
+---
+Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
+---
+
+Utilizando el mismo navegador y haciendo un cambio menor en el HTML, comprobaremos que se modifica en ambos (contenedores/direcciones) en tiempo real.
+
+
+        http://localhost:8080/
+        http://localhost:9080/
+
+
+<p align= center>
+  <img alt="octava" title="octava" src="https://github.com/Diego5RG-dev/ApacheDocker/blob/main/recursosDocker2/8.png" width="76%">
+</p>
